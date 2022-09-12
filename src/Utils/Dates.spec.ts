@@ -1,21 +1,27 @@
 import { dates, Dates } from "./Dates";
 
 describe("Values of class utility Dates", () => {
+  const CURRENT_DATE = {
+    day: 12,
+    month: 9,
+    year: 2022
+  };
+
   test("it should be able to current day", () => {
     const result: number = dates.day;
-    const value: number = 9;
+    const value: number = CURRENT_DATE.day;
     expect(value).toEqual(result);
   });
 
   test("it should be able to current month", () => {
     const result: number = dates.month;
-    const value: number = 9;
+    const value: number = CURRENT_DATE.month;
     expect(value).toEqual(result);
   });
 
   test("it should be able to current year", () => {
     const result: number = dates.year;
-    const value: number = 2022;
+    const value: number = CURRENT_DATE.year;
     expect(value).toEqual(result);
   });
 
@@ -30,7 +36,7 @@ describe("Values of class utility Dates", () => {
   test("it should increases date with on day", () => {
     dates.date = new Date();
     const result: number = dates.nextDay.day;
-    const value: number = 10;
+    const value: number = CURRENT_DATE.nextDay;
     expect(value).toEqual(result);
   });
 

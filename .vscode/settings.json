@@ -38,7 +38,7 @@
     "**lock*": true
   },
   "workbench.startupEditor": "none",
-  "workbench.colorTheme": "Min Dark",
+  "workbench.colorTheme": "Default Dark+",
   "tabnine.experimentalAutoImports": true,
   "gitlens.views.branches.branches.layout": "list",
   "gitlens.views.remotes.branches.layout": "list",
