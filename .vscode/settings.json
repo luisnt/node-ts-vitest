@@ -22,8 +22,10 @@
   "editor.bracketPairColorization.enabled": true,
   "editor.formatOnSave": true,
   "editor.formatOnPaste": false,
+  "editor.formatOnSaveMode": "modificationsIfAvailable",
   "editor.formatOnType": true,
   "editor.tabCompletion": "on",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.minimap.enabled": false,
   "files.exclude": {
     "**/.git": true,
@@ -33,20 +35,21 @@
     "**/.DS_Store": true,
     "**/Thumbs.db": true,
     "**/node_modules": true,
-    "**/.vscode": true,
+    "**/.vscode": false,
     "node_modules": true,
     "**lock*": true
   },
   "workbench.startupEditor": "none",
   "workbench.colorTheme": "Default Dark+",
   "tabnine.experimentalAutoImports": true,
-  "gitlens.views.branches.branches.layout": "list",
-  "gitlens.views.remotes.branches.layout": "list",
   "window.zoomLevel": -1,
   "eslint.alwaysShowStatus": true,
   "eslint.format.enable": true,
   "eslint.lintTask.enable": true,
   "eslint.packageManager": "yarn",
+  "parameterHints.languages": [
+    "all"
+  ],
   /* TEST CONFIG -> */
   "test-generator.sourceRoot": "./src", // Sets the file root source to './src'
   "test-generator.testDirectory": "./", // Outputs the test file in "__tests__/index.test.tsx",
@@ -60,6 +63,11 @@
     "})"
   ],
   "testing.automaticallyOpenPeekView": "never",
-  "explorerExclude.backup": {} // Renders a snippet in the newly created test file. see https://code.visualstudio.com/docs/editor/userdefinedsnippets for documentation on UserSnippets
+  "explorerExclude.backup": {},
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "search.useGlobalIgnoreFiles": true,
+  "search.useParentIgnoreFiles": true // Renders a snippet in the newly created test file. see https://code.visualstudio.com/docs/editor/userdefinedsnippets for documentation on UserSnippets
   /* <- TEST CONFIG */
 }

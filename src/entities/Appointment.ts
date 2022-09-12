@@ -13,8 +13,6 @@ export class Appointment {
     if (endsAt <= startsAt) {
       throw new Error("Invalid end date")
     }
-
-    // this.props
   }
 
   get customer() {
