@@ -42,7 +42,7 @@
   "workbench.startupEditor": "none",
   "workbench.colorTheme": "Default Dark+",
   "tabnine.experimentalAutoImports": true,
-  "window.zoomLevel": -1,
+  "window.zoomLevel": 0,
   "eslint.alwaysShowStatus": true,
   "eslint.format.enable": true,
   "eslint.lintTask.enable": true,
@@ -68,6 +68,9 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "search.useGlobalIgnoreFiles": true,
-  "search.useParentIgnoreFiles": true // Renders a snippet in the newly created test file. see https://code.visualstudio.com/docs/editor/userdefinedsnippets for documentation on UserSnippets
+  "search.useParentIgnoreFiles": true,
+  "cSpell.words": [
+    "postgres"
+  ] // Renders a snippet in the newly created test file. see https://code.visualstudio.com/docs/editor/userdefinedsnippets for documentation on UserSnippets
   /* <- TEST CONFIG */
 }

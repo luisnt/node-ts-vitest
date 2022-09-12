@@ -1,6 +1,4 @@
-import { AppointmentInterface } from "../interfaces/AppointmentInterface"
-
-interface AppointmentProps extends AppointmentInterface {}
+import { AppointmentProps } from "../contracts/entities/AppointmentProps"
 
 export class Appointment {
   constructor(private props: AppointmentProps) {
@@ -18,10 +16,10 @@ export class Appointment {
   get customer() {
     return this.props.customer
   }
-  get startAt() {
+  get startsAt() {
     return this.props.startsAt
   }
-  get endAt() {
+  get endsAt() {
     return this.props.endsAt
   }
 }

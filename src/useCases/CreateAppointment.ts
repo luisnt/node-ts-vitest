@@ -1,12 +1,15 @@
 import { Appointment } from "../entities/Appointment"
-import { AppointmentInterface } from "../interfaces/AppointmentInterface"
-
-interface request extends AppointmentInterface {}
-
-type response = Appointment
+import {
+  AppointmentRequest,
+  AppointmentResponse
+} from "../contracts/useCases/AppointmentData"
 
 export class CreateAppointment {
-  async execute({ customer, startsAt, endsAt }: request): Promise<response> {
+  async execute({
+    customer,
+    startsAt,
+    endsAt
+  }: AppointmentRequest): Promise<AppointmentResponse> {
     const appointment = new Appointment({
       customer,
       startsAt,

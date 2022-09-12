@@ -7,6 +7,11 @@ interface DatesProps {
 export class Dates {
   constructor(private props: DatesProps = { date: new Date() }) {}
 
+  get reset() {
+    this.props.date = new Date()
+    return this
+  }
+
   setDate(value: Date | string): Dates {
     if (typeof value === "object") {
       this.props.date = value
