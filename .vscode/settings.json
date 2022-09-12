@@ -70,7 +70,9 @@
   "search.useGlobalIgnoreFiles": true,
   "search.useParentIgnoreFiles": true,
   "cSpell.words": [
-    "postgres"
+    "inports",
+    "postgres",
+    "vitest"
   ] // Renders a snippet in the newly created test file. see https://code.visualstudio.com/docs/editor/userdefinedsnippets for documentation on UserSnippets
   /* <- TEST CONFIG */
 }
