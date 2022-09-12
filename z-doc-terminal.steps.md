@@ -117,5 +117,3 @@ export default defineConfig({
 ```terminal
 npm i date-fns
 ```
-
-break point: https://youtu.be/jBOLRzjEERk?t=2603
